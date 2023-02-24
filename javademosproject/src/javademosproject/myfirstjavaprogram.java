@@ -14,7 +14,8 @@ public class myfirstjavaprogram {
 		System.out.println("main method");
 		myfirstjavaprogram my1 =new myfirstjavaprogram();
 		myfirstjavaprogram my2=new myfirstjavaprogram();
-		
+		car c1=new car();
+		System.out.println(c1.var2);
 	}
 
 }

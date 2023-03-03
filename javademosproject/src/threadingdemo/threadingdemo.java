@@ -11,10 +11,10 @@ public class threadingdemo {
 }
 class multithread extends Thread{
 	public void run(){
-		for(int i=0;i<100;i++) {
-		System.out.println("hello from multiple thread\n");
+		for(int i=0;i<10;i++) {
+		System.out.println( Thread.currentThread().getName());
 		try {
-			Thread.sleep(1000);
+			Thread.sleep(10);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -26,9 +26,14 @@ class multithread extends Thread{
 }
 class singlethread {
 	void print(){
-		for(int i=0;i<100;i++) 
+		for(int i=0;i<10;i++) 
 		{
-		System.out.println("hello from single thread\n");
+		System.out.println(Thread.currentThread().getName());
+		try {
+			Thread.sleep(20);
+		}catch(Exception e) {
+			System.out.println("exception from single thread\n");
+		}
 		
 	}}
 		

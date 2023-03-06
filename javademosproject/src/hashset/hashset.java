@@ -9,7 +9,13 @@ public class hashset {
 		x1.add(20);
 		x1.add(10);
 		x1.add(30);
+		x1.add(60);
+		x1.add(80);
+		x1.add(40);
 
+		for(Integer q:x1) {
+			System.out.println(q);
+			}
 	}
 
 }
